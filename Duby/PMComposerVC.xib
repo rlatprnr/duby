@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMComposerVC" customModule="Duby" customModuleProvider="target">
+            <connections>
+                <outlet property="captionButton" destination="3CI-0Y-Pyd" id="LkE-pd-56d"/>
+                <outlet property="imageView" destination="qaK-Va-GQc" id="lRW-Id-KEg"/>
+                <outlet property="label" destination="Ifu-bK-zSo" id="5j6-40-WfL"/>
+                <outlet property="labelConstraint" destination="d2F-qo-OpH" id="7Gy-k6-O1x"/>
+                <outlet property="timeoutButton" destination="a2v-4Z-PDC" id="Zc2-Rp-ggZ"/>
+                <outlet property="timeoutLabel" destination="JOA-Ip-sQF" id="OrD-6s-r5l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaK-Va-GQc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-bK-zSo">
+                    <rect key="frame" x="0.0" y="517" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1sp-k1-V5h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7s-1e-klv">
+                    <rect key="frame" x="291" y="608" width="69" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="X1x-RC-Cel"/>
+                        <constraint firstAttribute="width" constant="69" id="qpV-M9-SDt"/>
+                    </constraints>
+                    <state key="normal" image="pass_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pass:" destination="-1" eventType="touchUpInside" id="ftD-JI-NJD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feo-Us-GZw">
+                    <rect key="frame" x="15" y="15" width="21" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="kn4-MM-84E"/>
+                        <constraint firstAttribute="width" constant="21" id="nBv-Hz-L0U"/>
+                    </constraints>
+                    <state key="normal" image="cancel_icon"/>
+                    <connections>
+                        <action selector="cancel" destination="-1" eventType="touchUpInside" id="OoZ-Ag-XZy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CI-0Y-Pyd">
+                    <rect key="frame" x="339" y="15" width="21" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="PnS-pj-GJe"/>
+                        <constraint firstAttribute="width" constant="21" id="iV9-Sd-BNx"/>
+                    </constraints>
+                    <state key="normal" image="edit_icon"/>
+                    <connections>
+                        <action selector="edit" destination="-1" eventType="touchUpInside" id="Y1k-yS-RCZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2v-4Z-PDC">
+                    <rect key="frame" x="15" y="598" width="34" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="XVn-GA-90P"/>
+                        <constraint firstAttribute="width" constant="34" id="xsb-uc-Z4c"/>
+                    </constraints>
+                    <state key="normal" image="bomb_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="timer" destination="-1" eventType="touchUpInside" id="oPY-3D-meb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOA-Ip-sQF">
+                    <rect key="frame" x="17" y="627" width="26" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="L29-w9-7pa"/>
+                        <constraint firstAttribute="height" constant="21" id="tSn-pv-HD7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qaK-Va-GQc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1zk-re-frs"/>
+                <constraint firstAttribute="trailing" secondItem="3CI-0Y-Pyd" secondAttribute="trailing" constant="15" id="Gbm-Tk-yEo"/>
+                <constraint firstAttribute="bottom" secondItem="qaK-Va-GQc" secondAttribute="bottom" id="LmG-jy-yDb"/>
+                <constraint firstAttribute="trailing" secondItem="Ifu-bK-zSo" secondAttribute="trailing" id="NUc-G3-UsC"/>
+                <constraint firstAttribute="bottom" secondItem="a2v-4Z-PDC" secondAttribute="bottom" constant="15" id="Qtb-Tx-8sS"/>
+                <constraint firstAttribute="bottom" secondItem="Ifu-bK-zSo" secondAttribute="bottom" constant="100" id="Yt7-h8-DJ9"/>
+                <constraint firstItem="JOA-Ip-sQF" firstAttribute="top" secondItem="a2v-4Z-PDC" secondAttribute="top" constant="29" id="ZDp-rA-Flt"/>
+                <constraint firstAttribute="trailing" secondItem="qaK-Va-GQc" secondAttribute="trailing" id="cgH-UC-DGU"/>
+                <constraint firstItem="qaK-Va-GQc" firstAttribute="bottom" secondItem="Ifu-bK-zSo" secondAttribute="bottom" id="d2F-qo-OpH"/>
+                <constraint firstAttribute="trailing" secondItem="N7s-1e-klv" secondAttribute="trailing" constant="15" id="gJS-mj-VsV"/>
+                <constraint firstItem="feo-Us-GZw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="gUS-bw-7UC"/>
+                <constraint firstAttribute="trailing" secondItem="qaK-Va-GQc" secondAttribute="trailing" id="jpx-SC-HFz"/>
+                <constraint firstItem="JOA-Ip-sQF" firstAttribute="leading" secondItem="a2v-4Z-PDC" secondAttribute="leading" constant="2" id="lLw-C1-H0e"/>
+                <constraint firstItem="Ifu-bK-zSo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lel-qH-j1K"/>
+                <constraint firstItem="3CI-0Y-Pyd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="n1T-0H-rKd"/>
+                <constraint firstItem="feo-Us-GZw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="pff-rU-LuO"/>
+                <constraint firstItem="qaK-Va-GQc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s3e-Uk-YQP"/>
+                <constraint firstAttribute="bottom" secondItem="N7s-1e-klv" secondAttribute="bottom" constant="15" id="tzI-Dx-mvc"/>
+                <constraint firstItem="qaK-Va-GQc" firstAttribute="bottom" secondItem="Ifu-bK-zSo" secondAttribute="bottom" id="vJS-Mh-Th2"/>
+                <constraint firstItem="qaK-Va-GQc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vYH-de-RJm"/>
+                <constraint firstItem="a2v-4Z-PDC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wfv-J0-1m9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cgH-UC-DGU"/>
+                    <exclude reference="d2F-qo-OpH"/>
+                    <exclude reference="s3e-Uk-YQP"/>
+                    <exclude reference="vJS-Mh-Th2"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="385.5" y="589.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bomb_icon" width="51" height="81"/>
+        <image name="cancel_icon" width="21" height="21"/>
+        <image name="edit_icon" width="43" height="37"/>
+        <image name="pass_icon" width="107" height="68"/>
+    </resources>
+</document>

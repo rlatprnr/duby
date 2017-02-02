@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+        <mutableArray key="Questrial-Regular.ttf">
+            <string>Questrial-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--UpdateVC-->
+        <scene sceneID="BWj-Hq-a12">
+            <objects>
+                <viewController storyboardIdentifier="UpdateVC" id="LGx-oe-vkE" customClass="UpdateVC" customModule="Duby" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ibz-r5-S0u"/>
+                        <viewControllerLayoutGuide type="bottom" id="J7N-Bj-X56"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWs-r6-vVU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-background-login-blurred" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-Ox-khK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-logo" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-eu-E3g">
+                                <rect key="frame" x="81" y="181" width="157" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="UDA-en-IbB"/>
+                                    <constraint firstAttribute="width" constant="157" id="iZO-wS-IxD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duby has a newer version available. Please update now." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isg-KF-Hk0">
+                                <rect key="frame" x="29" y="259" width="262" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="IqB-et-u1O"/>
+                                    <constraint firstAttribute="height" constant="50" id="Lhp-Fp-RzJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Questrial-Regular" family="Questrial" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efa-fP-8JW">
+                                <rect key="frame" x="100" y="324" width="120" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="5CV-gw-OAP"/>
+                                    <constraint firstAttribute="height" constant="39" id="eDL-6l-5Sb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                                <state key="normal" title="UPDATE" backgroundImage="image-signin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateButtonPressed:" destination="LGx-oe-vkE" eventType="touchUpInside" id="QLQ-N6-mH6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Isg-KF-Hk0" secondAttribute="centerX" id="2d4-ea-R4f"/>
+                            <constraint firstItem="efa-fP-8JW" firstAttribute="top" secondItem="Isg-KF-Hk0" secondAttribute="bottom" constant="15" id="7Q1-1W-H57"/>
+                            <constraint firstAttribute="centerX" secondItem="efa-fP-8JW" secondAttribute="centerX" id="DaL-3P-ryv"/>
+                            <constraint firstItem="Isg-KF-Hk0" firstAttribute="top" secondItem="dh8-eu-E3g" secondAttribute="bottom" constant="10" id="DyB-j9-34l"/>
+                            <constraint firstItem="dRZ-Ox-khK" firstAttribute="leading" secondItem="eWs-r6-vVU" secondAttribute="leadingMargin" constant="-16" id="Dys-ZR-8sy"/>
+                            <constraint firstItem="J7N-Bj-X56" firstAttribute="top" secondItem="dRZ-Ox-khK" secondAttribute="bottom" id="QaE-mV-XID"/>
+                            <constraint firstAttribute="centerY" secondItem="Isg-KF-Hk0" secondAttribute="centerY" constant="0.5" id="cas-Jh-oAf"/>
+                            <constraint firstAttribute="centerX" secondItem="dh8-eu-E3g" secondAttribute="centerX" id="ngK-VA-nys"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dRZ-Ox-khK" secondAttribute="trailing" constant="-16" id="v5E-ZI-24Z"/>
+                            <constraint firstItem="dRZ-Ox-khK" firstAttribute="top" secondItem="ibz-r5-S0u" secondAttribute="bottom" constant="-20" id="xwn-UV-vkf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="34v-8G-zRH">
+                        <barButtonItem key="backBarButtonItem" title=" " id="iLF-nA-gLP"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpd-Em-XXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image-background-login-blurred" width="320" height="569"/>
+        <image name="image-logo" width="157" height="68"/>
+        <image name="image-signin" width="120" height="39"/>
+    </resources>
+</document>

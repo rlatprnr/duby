@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="5W6-8F-Tfa" customClass="PMUserCell" customModule="Duby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5W6-8F-Tfa" id="191-cu-L0M">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-Ik-4Bt">
+                        <rect key="frame" x="19" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Khr-wf-VbR"/>
+                            <constraint firstAttribute="width" constant="40" id="lrF-IA-ZIW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamloops, BC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngw-zU-mdg">
+                        <rect key="frame" x="96" y="29" width="65" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="mkt-0a-mrT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@janet jackson" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWl-6t-sZf">
+                        <rect key="frame" x="67" y="11" width="106" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.16078431372549021" green="0.51372549019607838" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzT-uL-xb0">
+                        <rect key="frame" x="67" y="31" width="7" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="1zf-lP-zc6"/>
+                            <constraint firstAttribute="height" constant="9" id="jfv-cf-U5O"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="users"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liU-5K-JFE">
+                        <rect key="frame" x="78" y="29" width="12" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="JJS-gp-0js"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="427-Aq-e9q">
+                        <rect key="frame" x="262" y="10" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.040000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="BC4-Fa-pnt"/>
+                            <constraint firstAttribute="width" constant="35" id="fJs-Wp-meL"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectTouchUp" destination="5W6-8F-Tfa" eventType="touchUpInside" id="ngr-rV-Wng"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="IEU-Ik-4Bt" firstAttribute="leading" secondItem="191-cu-L0M" secondAttribute="leadingMargin" constant="11" id="2Ve-aE-7kX"/>
+                    <constraint firstAttribute="centerY" secondItem="IEU-Ik-4Bt" secondAttribute="centerY" constant="-0.5" id="BrD-w5-r5y"/>
+                    <constraint firstItem="SWl-6t-sZf" firstAttribute="leading" secondItem="RzT-uL-xb0" secondAttribute="leading" id="PpR-xh-qW4"/>
+                    <constraint firstItem="SWl-6t-sZf" firstAttribute="leading" secondItem="IEU-Ik-4Bt" secondAttribute="trailing" constant="8" id="R7T-xQ-PhL"/>
+                    <constraint firstItem="liU-5K-JFE" firstAttribute="leading" secondItem="RzT-uL-xb0" secondAttribute="trailing" constant="4" id="WWc-3v-cM9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="427-Aq-e9q" secondAttribute="trailing" constant="15" id="WsN-fg-IVc"/>
+                    <constraint firstAttribute="centerY" secondItem="427-Aq-e9q" secondAttribute="centerY" constant="-0.5" id="Z7h-Gv-nU0"/>
+                    <constraint firstItem="RzT-uL-xb0" firstAttribute="top" secondItem="SWl-6t-sZf" secondAttribute="bottom" id="gMM-hW-Xtv"/>
+                    <constraint firstItem="ngw-zU-mdg" firstAttribute="top" secondItem="SWl-6t-sZf" secondAttribute="bottom" constant="-2" id="gTE-T0-WfD"/>
+                    <constraint firstItem="liU-5K-JFE" firstAttribute="top" secondItem="SWl-6t-sZf" secondAttribute="bottom" constant="-2" id="gtQ-lA-aFV"/>
+                    <constraint firstItem="SWl-6t-sZf" firstAttribute="centerY" secondItem="IEU-Ik-4Bt" secondAttribute="centerY" constant="-7" id="lcD-SQ-ytX"/>
+                    <constraint firstItem="ngw-zU-mdg" firstAttribute="leading" secondItem="liU-5K-JFE" secondAttribute="trailing" constant="6" id="xr4-Bd-IGv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="influenceLabel" destination="liU-5K-JFE" id="8P7-Ii-Rmw"/>
+                <outlet property="locationLabel" destination="ngw-zU-mdg" id="lsP-Zj-TVu"/>
+                <outlet property="selectButton" destination="427-Aq-e9q" id="rbe-12-woS"/>
+                <outlet property="userImageView" destination="IEU-Ik-4Bt" id="j1P-k4-jcK"/>
+                <outlet property="usernameLabel" destination="SWl-6t-sZf" id="wLj-rT-1vg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_placeholder" width="150" height="150"/>
+        <image name="users" width="22" height="32"/>
+    </resources>
+</document>

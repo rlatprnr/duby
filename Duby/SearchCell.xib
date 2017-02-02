@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="searchCell" id="auU-nc-Fbw" customClass="SearchCell" customModule="Duby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cBS-mv-VIo">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cBS-mv-VIo" secondAttribute="height" multiplier="1:1" id="R0z-48-owD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Om7-mT-jVH">
+                        <rect key="frame" x="8" y="153" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Nyu-GP-XCI"/>
+                            <constraint firstAttribute="width" constant="30" id="fWj-B4-prR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-sv-egS">
+                        <rect key="frame" x="46" y="153" width="91" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0rh-Cl-ovo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.34901960780000002" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IH0-Q6-gSB">
+                        <rect key="frame" x="8" y="188" width="129" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="xhQ-ix-LQz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syQ-HU-RSe">
+                        <rect key="frame" x="76" y="211" width="61" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="QHd-tH-g1C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                        <state key="normal" title="0" image="0E243D8B-A979-420C-A943-94439F48BE63">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="shareCountPressed:" destination="auU-nc-Fbw" eventType="touchUpInside" id="3w3-rb-uME"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pP-SY-tXi">
+                        <rect key="frame" x="8" y="8" width="129" height="129"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSY-Rz-ohp">
+                        <rect key="frame" x="8" y="211" width="61" height="21"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="0" image="icon-comment">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="commentsCountPressed:" destination="auU-nc-Fbw" eventType="touchUpInside" id="WCg-XH-DkD"/>
+                        </connections>
+                    </button>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-f9-85X">
+                        <rect key="frame" x="105" y="9" width="28" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="2xQ-8f-iYx"/>
+                            <constraint firstAttribute="width" constant="28" id="QlU-sC-qVt"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MIv-sv-egS" firstAttribute="leading" secondItem="Om7-mT-jVH" secondAttribute="trailing" constant="8" id="01l-Ln-mEa"/>
+                <constraint firstItem="Ten-f9-85X" firstAttribute="top" secondItem="auU-nc-Fbw" secondAttribute="topMargin" constant="1" id="2Aj-B0-FPn"/>
+                <constraint firstItem="MIv-sv-egS" firstAttribute="top" secondItem="cBS-mv-VIo" secondAttribute="bottom" constant="8" id="5BE-7c-dUK"/>
+                <constraint firstItem="4pP-SY-tXi" firstAttribute="leading" secondItem="auU-nc-Fbw" secondAttribute="leading" constant="8" id="5Zq-6M-5nw"/>
+                <constraint firstItem="tSY-Rz-ohp" firstAttribute="width" secondItem="syQ-HU-RSe" secondAttribute="width" id="GCU-Vv-5Rs"/>
+                <constraint firstAttribute="trailing" secondItem="4pP-SY-tXi" secondAttribute="trailing" constant="8" id="Jkb-wt-MfI"/>
+                <constraint firstItem="cBS-mv-VIo" firstAttribute="leading" secondItem="auU-nc-Fbw" secondAttribute="leading" id="KcJ-sl-Fpw"/>
+                <constraint firstItem="Om7-mT-jVH" firstAttribute="top" secondItem="cBS-mv-VIo" secondAttribute="bottom" constant="8" id="PGh-gX-zwp"/>
+                <constraint firstAttribute="trailing" secondItem="IH0-Q6-gSB" secondAttribute="trailing" constant="8" id="RAR-ek-QVk"/>
+                <constraint firstItem="tSY-Rz-ohp" firstAttribute="leading" secondItem="auU-nc-Fbw" secondAttribute="leading" constant="8" id="UdV-rX-FoN"/>
+                <constraint firstItem="IH0-Q6-gSB" firstAttribute="top" secondItem="MIv-sv-egS" secondAttribute="bottom" constant="5" id="Wm8-6J-ayE"/>
+                <constraint firstItem="tSY-Rz-ohp" firstAttribute="height" secondItem="syQ-HU-RSe" secondAttribute="height" id="ZpT-ep-b6A"/>
+                <constraint firstItem="cBS-mv-VIo" firstAttribute="top" secondItem="auU-nc-Fbw" secondAttribute="top" id="avk-Hh-QQn"/>
+                <constraint firstAttribute="trailing" secondItem="MIv-sv-egS" secondAttribute="trailing" constant="8" id="fME-N3-vrD"/>
+                <constraint firstAttribute="bottom" secondItem="tSY-Rz-ohp" secondAttribute="bottom" constant="8" id="fv8-Lb-nhY"/>
+                <constraint firstAttribute="trailing" secondItem="syQ-HU-RSe" secondAttribute="trailing" constant="8" id="gem-GB-2Du"/>
+                <constraint firstItem="4pP-SY-tXi" firstAttribute="bottom" secondItem="cBS-mv-VIo" secondAttribute="bottom" constant="-8" id="hUw-yv-Ge2"/>
+                <constraint firstItem="Om7-mT-jVH" firstAttribute="leading" secondItem="auU-nc-Fbw" secondAttribute="leading" constant="8" id="ils-RS-Xuo"/>
+                <constraint firstAttribute="trailing" secondItem="cBS-mv-VIo" secondAttribute="trailing" id="jbb-kp-FDn"/>
+                <constraint firstItem="syQ-HU-RSe" firstAttribute="leading" secondItem="tSY-Rz-ohp" secondAttribute="trailing" constant="7.5" id="mBj-oo-QZA"/>
+                <constraint firstItem="4pP-SY-tXi" firstAttribute="top" secondItem="auU-nc-Fbw" secondAttribute="top" constant="8" id="qfR-mh-Zxb"/>
+                <constraint firstItem="syQ-HU-RSe" firstAttribute="top" secondItem="IH0-Q6-gSB" secondAttribute="bottom" constant="2" id="vKp-qN-Owr"/>
+                <constraint firstItem="IH0-Q6-gSB" firstAttribute="leading" secondItem="auU-nc-Fbw" secondAttribute="leading" constant="8" id="yeZ-1N-Nbw"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Ten-f9-85X" secondAttribute="trailing" constant="4" id="zax-qv-1Qy"/>
+            </constraints>
+            <size key="customSize" width="145" height="240"/>
+            <connections>
+                <outlet property="cameraImageView" destination="Ten-f9-85X" id="6gs-Lv-hTo"/>
+                <outlet property="commentsCount" destination="tSY-Rz-ohp" id="WFc-J5-NY7"/>
+                <outlet property="descriptionLabel" destination="4pP-SY-tXi" id="oah-U5-qkI"/>
+                <outlet property="dubyImageView" destination="cBS-mv-VIo" id="DWb-K9-dbf"/>
+                <outlet property="locationLabel" destination="IH0-Q6-gSB" id="BVV-Oy-doH"/>
+                <outlet property="profileImageView" destination="Om7-mT-jVH" id="QUa-Ug-zF4"/>
+                <outlet property="sharesCount" destination="syQ-HU-RSe" id="8G5-Ke-6Ud"/>
+                <outlet property="usernameLabel" destination="MIv-sv-egS" id="fa9-gi-PTc"/>
+            </connections>
+            <point key="canvasLocation" x="310.5" y="578"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="0E243D8B-A979-420C-A943-94439F48BE63" width="22" height="32">
+            <mutableData key="keyedArchiveRepresentation">
+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
+AAAA3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAALEAAAD/AAAA/wAAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjAAAA/wAAAP8AAACk
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAoAAAAP8AAAD/AAAArQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK4AAAD/AAAA9gAAAMoAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAADVAAAA8AAAAMkAAAD2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA/wAAALwAAAB9AAAA/wAAADYAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAASwAAAP8AAABtAAAAHwAAAP8AAACxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMoAAAD/AAAAEQAAAAAAAACvAAAA/wAAADMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAD/
+AAAAnQAAAAAAAAAAAAAAEQAAAP0AAADzAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAB0AAAD8AAAA9QAAAAsAAAAAAAAAAAAAAAAAAABBAAAA/wAAAPIAAAA+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUAAADxAAAA/wAAADwAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAEQAAAD+AAAA/wAAAKwAAAA9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIwAAAJIAAAD/AAAA/wAAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAK0AAAD/
+AAAA/wAAAPcAAADBAAAAqQAAAJ8AAACsAAAA2wAAAP8AAAD/AAAAwgAAACkAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAIMAAADHAAAA+QAAAP8AAAD/AAAA/wAAAOYAAACh
+AAAAQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAQAAAwAAAAEAFgAAAQEAAwAAAAEAIAAAAQIAAwAA
+AAQAAAu2AQMAAwAAAAEAAQAAAQYAAwAAAAEAAgAAAREABAAAAAEAAAAIARIAAwAAAAEAAQAAARUAAwAA
+AAEABAAAARYAAwAAAAEAIAAAARcABAAAAAEAAAsAARwAAwAAAAEAAQAAAVIAAwAAAAEAAgAAAVMAAwAA
+AAQAAAu+h3MABwAADEgAAAvGAAAAAAAIAAgACAAIAAEAAQABAAEAAAxITGlubwIQAABtbnRyUkdCIFhZ
+WiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLUhQ
+ICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFjcHJ0AAABUAAA
+ADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAAABRyWFlaAAACGAAAABRnWFlaAAACLAAA
+ABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAAAIh2dWVkAAADTAAAAIZ2aWV3AAAD1AAA
+ACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAAAAxyVFJDAAAEPAAACAxnVFJDAAAEPAAA
+CAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykgMTk5OCBIZXdsZXR0LVBhY2thcmQgQ29t
+cGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAABJzUkdCIElFQzYxOTY2
+LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAA
+AAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAA
+AAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z2Rlc2MAAAAAAAAAFklFQyBodHRwOi8vd3d3
+LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQg
+UkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdC
+IGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJl
+bmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAALFJlZmVyZW5jZSBW
+aWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZp
+ZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZWiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAA
+AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAAAABDUlQgY3VydgAAAAAAAAQAAAAABQAK
+AA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCf
+AKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFF
+AUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIv
+AjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNm
+A3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTw
+BP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbR
+BuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQ
+CSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuw
+C8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62
+DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxIm
+EkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYD
+FiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpR
+GncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8T
+Hz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRN
+JHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoC
+KjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1
+MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbp
+NyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4g
+PmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXe
+RiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4l
+Tm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3
+V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBX
+YKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpI
+ap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTM
+dSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/l
+gEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuW
+i/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfg
+mEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTH
+pTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJL
+ssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBw
+wOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83
+z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i
+3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO60
+70DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t
+///SIiMkJVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMmJyhfEBBOU0JpdG1h
+cEltYWdlUmVwWk5TSW1hZ2VSZXBYTlNPYmplY3TSIiMqK1dOU0FycmF5oioo0iIjLS5eTlNNdXRhYmxl
+QXJyYXmjLSoo0zAxCTIzNFdOU1doaXRlXE5TQ29sb3JTcGFjZUQwIDAAEAOAC9IiIzY3V05TQ29sb3Ki
+NijSIiM5OldOU0ltYWdlojkoXxAPTlNLZXllZEFyY2hpdmVy0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3
+AEUASwBUAFsAaABvAHcAeQB+AIAAggCHAJIAlACWAJgAnQCgAKIApACmAKgArQDEAMYAyBjaGN8Y6hjz
+GQYZChkdGSgZMRk2GT4ZQRlGGVUZWRlgGWgZdRl6GXwZfhmDGYsZjhmTGZsZnhmwGbMZuAAAAAAAAAIB
+AAAAAAAAAD8AAAAAAAAAAAAAAAAAABm6A
+</mutableData>
+        </image>
+        <image name="camera" width="28" height="18"/>
+        <image name="icon-comment" width="13" height="14"/>
+        <image name="user_placeholder" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Sofia Pro Medium.otf">
+            <string>SofiaPro-Medium</string>
+            <string>SofiaPro-Medium</string>
+            <string>SofiaPro-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnableLocationVC" customModule="Duby" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="enable_location_bg" translatesAutoresizingMaskIntoConstraints="NO" id="sKu-KM-xs0">
+                    <rect key="frame" x="90" y="10" width="120" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2NF-hn-ZiT"/>
+                        <constraint firstAttribute="width" constant="120" id="GKd-6p-T3L"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B39-bo-QBf">
+                    <rect key="frame" x="81" y="163" width="139" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="w6x-6A-GD0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duby uses your location so you can see quality content in yor area. Don’t worry we protect you, all locations are anonymous." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-iD-33n">
+                    <rect key="frame" x="8" y="185" width="284" height="42"/>
+                    <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="14"/>
+                    <color key="textColor" red="0.85927635732323226" green="0.85927635732323226" blue="0.85927635732323226" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTT-Pl-kyl">
+                    <rect key="frame" x="0.0" y="244" width="300" height="56"/>
+                    <color key="backgroundColor" red="0.85927635729999996" green="0.85927635729999996" blue="0.85927635729999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="1HI-H3-KLi"/>
+                        <constraint firstAttribute="height" constant="56" id="fqv-zd-uMu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="30"/>
+                    <state key="normal" title="Okay">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1HI-H3-KLi"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="okayTouchUp" destination="-1" eventType="touchUpInside" id="1By-mN-xVh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.15686274510000001" green="0.41568627450000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="PTT-Pl-kyl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Od-mE-lwz"/>
+                <constraint firstItem="cTc-iD-33n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="FYn-0d-e0y"/>
+                <constraint firstItem="B39-bo-QBf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="81" id="Hgh-sT-KQn"/>
+                <constraint firstAttribute="trailing" secondItem="B39-bo-QBf" secondAttribute="trailing" constant="80" id="INL-Oz-GeE"/>
+                <constraint firstAttribute="centerX" secondItem="sKu-KM-xs0" secondAttribute="centerX" id="Jep-jd-oHo"/>
+                <constraint firstAttribute="centerX" secondItem="cTc-iD-33n" secondAttribute="centerX" id="NdP-UB-kzQ"/>
+                <constraint firstItem="cTc-iD-33n" firstAttribute="top" secondItem="B39-bo-QBf" secondAttribute="bottom" constant="3" id="RWc-cc-m5b"/>
+                <constraint firstAttribute="centerX" secondItem="PTT-Pl-kyl" secondAttribute="centerX" id="Ril-Bi-xAd"/>
+                <constraint firstItem="sKu-KM-xs0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="S6D-2I-1yl"/>
+                <constraint firstAttribute="centerX" secondItem="B39-bo-QBf" secondAttribute="centerX" constant="-0.5" id="ZBL-fs-RBC"/>
+                <constraint firstAttribute="trailing" secondItem="PTT-Pl-kyl" secondAttribute="trailing" id="dFG-O0-Yan"/>
+                <constraint firstItem="cTc-iD-33n" firstAttribute="top" secondItem="B39-bo-QBf" secondAttribute="bottom" constant="3" id="j8R-Y3-Wy2"/>
+                <constraint firstAttribute="trailing" secondItem="cTc-iD-33n" secondAttribute="trailing" constant="8" id="kmN-oE-rzJ"/>
+                <constraint firstAttribute="bottom" secondItem="PTT-Pl-kyl" secondAttribute="bottom" id="kxw-cG-qfk"/>
+                <constraint firstItem="sKu-KM-xs0" firstAttribute="top" secondItem="B39-bo-QBf" secondAttribute="top" constant="-153" id="oDY-vc-JIW"/>
+                <constraint firstItem="PTT-Pl-kyl" firstAttribute="bottom" secondItem="cTc-iD-33n" secondAttribute="bottom" constant="60" id="vxT-0d-keC"/>
+                <constraint firstItem="B39-bo-QBf" firstAttribute="top" secondItem="sKu-KM-xs0" secondAttribute="bottom" constant="3" id="yIi-8c-DO9"/>
+                <constraint firstAttribute="centerX" secondItem="B39-bo-QBf" secondAttribute="centerX" constant="-0.5" id="z9h-8S-sUt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Hgh-sT-KQn"/>
+                    <exclude reference="INL-Oz-GeE"/>
+                    <exclude reference="yIi-8c-DO9"/>
+                    <exclude reference="z9h-8S-sUt"/>
+                    <exclude reference="j8R-Y3-Wy2"/>
+                    <exclude reference="vxT-0d-keC"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="329" y="394"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="enable_location_bg" width="191" height="237"/>
+    </resources>
+</document>
